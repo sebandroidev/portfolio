@@ -2,6 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Performance optimizations */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Critical loading optimization */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Focus management for accessibility */
+:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+/* GPU acceleration for animations */
+.animate-in,
+.animate-out,
+.fade-in,
+.fade-out,
+.slide-in,
+.slide-out {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+}
+
 @layer base {
     :root {
       --background: 0 0% 100%;
@@ -141,4 +186,61 @@ code[data-line-numbers-max-digits="2"] > [data-line]::before {
  
 code[data-line-numbers-max-digits="3"] > [data-line]::before {
   width: 3rem;
+}
+
+/* Prevent layout shifts from dropdown menus */
+[data-radix-popper-content-wrapper] {
+  z-index: 9999 !important;
+  position: fixed !important;
+  will-change: transform;
+}
+
+[data-radix-dropdown-menu-content] {
+  transform-origin: var(--radix-dropdown-menu-content-transform-origin);
+  animation: none !important; /* Disable animations that might cause shifts */
+}
+
+/* Ensure the navbar maintains its position and contains layout */
+.dock-container {
+  contain: layout style paint;
+  isolation: isolate;
+}
+
+/* Fix for dropdown menu positioning to prevent layout shifts */
+body:has([data-radix-dropdown-menu-content]) {
+  overflow: visible !important;
+}
+
+/* Ensure dropdown doesn't affect layout */
+[data-radix-dropdown-menu-content] {
+  position: fixed !important;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Stable navbar positioning */
+.navbar-fixed {
+  position: fixed;
+  width: 100%;
+  pointer-events: none;
+  contain: layout;
+}
+
+/* Language dropdown specific styles */
+[data-radix-dropdown-menu-content][data-side="top"] {
+  margin-bottom: 18px;
+  transform-origin: bottom center;
+  border-radius: 12px !important;
+  box-shadow: 
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* Enhanced shadow for dark mode */
+.dark [data-radix-dropdown-menu-content][data-side="top"] {
+  box-shadow: 
+    0 20px 25px -5px rgba(0, 0, 0, 0.4),
+    0 10px 10px -5px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
 }

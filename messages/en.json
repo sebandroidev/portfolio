@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "blog": "Blog",
+    "theme": "Theme",
+    "language": "Language"
+  },
+  "hero": {
+    "greeting": "Hi, I'm {name} 👋"
+  },
+  "sections": {
+    "about": "About",
+    "work": "Work Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "projects": "My Projects",
+    "contact": "Contact"
+  },
+  "projects": {
+    "title": "Check out my latest work",
+    "description": "I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.",
+    "viewAll": "View All {count} Projects"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "description": "Want to chat? Just shoot me a dm with a direct question on twitter and I'll respond whenever I can. I will ignore all soliciting."
+  },
+  "work": {
+    "present": "Present"
+  },
+  "profile": {
+    "location": "Lomé, TOGO",
+    "description": "A skilled mobile developer with 5 years of experience, focusing on application development, UI/UX design, and innovation. Proficient in mobile technologies, I've successfully delivered user-centric solutions. Skilled in project management and dedicated to crafting high-quality apps that meet client needs.",
+    "summary": "A skilled mobile developer with 5 years of experience, focusing on application development, UI/UX design, and innovation. Proficient in mobile technologies, I've successfully delivered user-centric solutions. Skilled in project management and dedicated to crafting high-quality apps that meet client needs."
+  },
+  "social": {
+    "sendEmail": "Send Email"
+  },
+  "companies": {
+    "wiicode": {
+      "title": "Flutter Developer",
+      "description": "TheCyrele Mobile Application development with clean architecture and TDD approach.",
+      "tasks": [
+        "Convert high-fidelity designs into fully responsive Flutter apps based on a clean and flexible Dart code",
+        "Implement a solid and clean architecture based on Test Driven Development",
+        "Fetch and manage data from Firebase Firestore, Realtime Database, and custom APIs",
+        "Allow users to request rides, view driver details, and handle payments securely",
+        "Managed the technical team for the launch of BKG SPEED in Senegal",
+        "Write some stress tests to check the app health and potential failures"
+      ]
+    },
+    "bkgspeed": {
+      "title": "Lead Developer",
+      "description": "Led development of stable mobile applications with real-time tracking and team management.",
+      "tasks": [
+        "Led the design and the development of a more stable version of all mobile applications",
+        "Implement real-time driver tracking using Google Maps",
+        "Fetch and manage data from Firebase Firestore, Realtime Database, and custom APIs",
+        "Allow users to request rides, view driver details, and handle payments securely",
+        "Managed the technical team for the launch of BKG SPEED in Senegal",
+        "Write some stress tests to check the app health and potential failures"
+      ]
+    },
+    "clickafrica": {
+      "title": "Lead Flutter Developer",
+      "description": "KLIC: On-demand service app development with comprehensive features and team management.",
+      "tasks": [
+        "Convert high-fidelity designs into responsive Flutter apps and apply UI requirements",
+        "Implement real-time driver tracking using Google Maps",
+        "Fetch and manage data from Firebase Firestore, Realtime Database, and custom APIs",
+        "Develop user authentication, registration, and payment features",
+        "Allow users to request rides, view driver details, and handle payments securely",
+        "Implement a rating, review system, and notifications for user engagement",
+        "Contributed to build dashboards for drivers and admins to manage app data and analytics",
+        "Conduct testing, optimize performance, and ensure bug-free app operation",
+        "Set up CI/CD pipelines for automated testing, deployment, and continuous improvement",
+        "Provide comprehensive documentation for code, architecture, and security measures"
+      ]
+    },
+    "leotech": {
+      "title": "Software Developer",
+      "description": "Full-stack development and client application maintenance with web technologies.",
+      "tasks": [
+        "Responsible for maintaining and updating client applications",
+        "Responsible for the development of the UNIMOON website using ReactJS and TailwindCSS",
+        "Lead the implementation of GesPro software and staff training",
+        "Responsible for maintaining and updating the SGI-TOGO website and mobile application"
+      ]
+    },
+    "plusservice": {
+      "title": "Software Developer",
+      "description": "Desktop and mobile application development for business management systems.",
+      "tasks": [
+        "Build a user-friendly desktop application with Flutter for company accountant and cashier",
+        "Allow company responsible to create and manage customers accounts",
+        "Fetch and manage data from API running on local servers",
+        "Develop user authentication and password reset features",
+        "Set up light and dark mode",
+        "Managed realtime data synchronization between the application modules using Socket.io",
+        "Conduct testing, optimize performance, and ensure bug-free app operation",
+        "Set up CI/CD pipelines for automated testing, deployment, and continuous improvement",
+        "Designed and built an Android application grouping all the products sold by the company",
+        "Kept synced datas like prices and availability across all company employees using Firebase Firestore",
+        "Handled product orders",
+        "Implemented authentication using Google"
+      ]
+    }
+  },
+  "education": {
+    "wes": {
+      "degree": "Bachelor's Degree Equivalence by World Education Service"
+    },
+    "aits": {
+      "degree": "Bachelor's degree in Software Engineering"
+    },
+    "highschool": {
+      "degree": "High School Graduation Diploma"
+    }
+  },
+  "projectsData": {
+    "trendz": {
+      "description": "Event management platform with 3 mobile apps (iOS/Android) built in Flutter. Features include Firebase authentication, mobile payments, real-time data sync, and automated CI/CD deployment.",
+      "linkTypes": {
+        "ios": "iOS App",
+        "android": "Android App"
+      }
+    },
+    "molory": {
+      "description": "Mobile application suite with 3 Flutter apps for iOS and Android. Implements Firebase integration, local caching with Hive, payment processing, and user feedback systems.",
+      "linkTypes": {
+        "ios": "iOS App",
+        "android": "Android App"
+      }
+    },
+    "thecyrele": {
+      "description": "Ride-sharing mobile application built with Flutter using Test Driven Development. Features real-time tracking, secure payments, and comprehensive testing framework.",
+      "linkTypes": {
+        "app": "Mobile App"
+      }
+    },
+    "klic": {
+      "description": "On-demand service app similar to Uber and Uber Eats. Built with Flutter featuring real-time GPS tracking, payment integration, rating system, and admin dashboards.",
+      "linkTypes": {
+        "app": "Mobile App"
+      }
+    },
+    "pavs": {
+      "description": "Desktop application for account management built with Flutter. Features user authentication, real-time data sync with Socket.io, and dual theme support.",
+      "linkTypes": {
+        "app": "Desktop App"
+      }
+    },
+    "cataloguePavsApp": {
+      "description": "Android product catalog app with Firebase integration. Manages product inventory, prices, and orders with Google authentication.",
+      "linkTypes": {
+        "app": "Android App"
+      }
+    }
+  }
+}

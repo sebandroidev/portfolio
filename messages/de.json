@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "home": "Start",
+    "projects": "Projekte",
+    "blog": "Blog",
+    "theme": "Design",
+    "language": "Sprache"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin {name} 👋"
+  },
+  "sections": {
+    "about": "Über mich",
+    "work": "Berufserfahrung",
+    "education": "Ausbildung",
+    "skills": "Fähigkeiten",
+    "projects": "Meine Projekte",
+    "hackathons": "Hackathons",
+    "contact": "Kontakt"
+  },
+  "projects": {
+    "title": "Schauen Sie sich meine neuesten Arbeiten an",
+    "description": "Ich habe an verschiedenen Projekten gearbeitet, von einfachen Websites bis hin zu komplexen Webanwendungen. Hier sind einige meiner Favoriten.",
+    "viewAll": "Alle {count} Projekte ansehen"
+  },
+  "hackathons": {
+    "title": "Ich baue gerne Dinge",
+    "description": "Während meiner Universitätszeit habe ich an {count}+ Hackathons teilgenommen. Menschen aus dem ganzen Land kamen zusammen und bauten in 2-3 Tagen unglaubliche Dinge. Es war aufschlussreich zu sehen, welche endlosen Möglichkeiten von einer Gruppe motivierter und leidenschaftlicher Individuen zum Leben erweckt wurden."
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "description": "Lust zu plaudern? Schreiben Sie mir einfach eine direkte Nachricht mit einer direkten Frage auf Twitter und ich antworte, wann immer ich kann. Ich werde alle Werbung ignorieren."
+  },
+  "work": {
+    "present": "Aktuell"
+  },
+  "profile": {
+    "location": "San Francisco, CA",
+    "description": "Erfahrener Mobile Entwickler & Software-Ingenieur spezialisiert auf innovative Anwendungsentwicklung und benutzerzentrierte Design-Lösungen.",
+    "summary": "Ein qualifizierter mobiler Entwickler mit über 5 Jahren Erfahrung in der Anwendungsentwicklung, UI/UX-Design und Innovation. Versiert in modernen mobilen Technologien und Frameworks, habe ich erfolgreich benutzerzentrierte Lösungen auf verschiedenen Plattformen geliefert. Mit starker Expertise im Projektmanagement und einem Engagement für Exzellenz spezialisiere ich mich auf die Erstellung hochwertiger Anwendungen, die Kundenerwartungen übertreffen und bedeutungsvolles Benutzerengagement fördern."
+  },
+  "social": {
+    "sendEmail": "E-Mail senden"
+  },
+  "companies": {
+    "atomicFinance": {
+      "title": "Bitcoin-Protokoll-Ingenieur",
+      "description": "Implementierung der Bitcoin Discrete Log Contract (DLC) Protokollspezifikationen als Open-Source TypeScript SDK. Dockerisierung aller Microservices und Einrichtung eines Produktions-Kubernetes-Clusters. Architektur eines Data Lakes mit AWS S3 und Athena für historisches Backtesting von Bitcoin-Handelsstrategien. Entwicklung einer mobilen App mit React Native und TypeScript."
+    },
+    "shopify": {
+      "title": "Software-Ingenieur",
+      "description": "Implementierung eines benutzerdefinierten Kubernetes-Controllers in Go zur Automatisierung der Bereitstellung von MySQL- und ProxySQL-benutzerdefinierten Ressourcen, um über 2.000 interne Entwickler zu ermöglichen, ihre App-Datenbanken sofort in die Produktion zu deployen. Schrieb mehrere Skripte in Go zur Automatisierung von MySQL-Datenbank-Failovers unter Beibehaltung der Master-Slave-Replikationstopologien und Konsistenz der Zookeeper-Knoten mit Änderungen."
+    },
+    "nvidia": {
+      "title": "Software-Ingenieur",
+      "description": "Architektur und Programmierung des gesamten MVP des internen Admin- und A/B-Test-Dashboards von GeForce Now Cloud Gaming mit React, Redux, TypeScript und Python."
+    },
+    "splunk": {
+      "title": "Software-Ingenieur",
+      "description": "Mitentwicklung einer Prototyp-iOS-App mit einem anderen Praktikanten in Swift für das neue Splunk Phantom Security Orchestration-Produkt (später öffentlich demonstriert und auf der jährlichen .conf-Konferenz in Las Vegas gestartet). Implementierung eines Echtzeit-Services für die iOS-App in Django (Python) und C++; Serialisierung von Daten mit Protobufs über gRPC übertragen, was zu einer ungefähren 500%igen Steigerung des Datendurchsatzes führte."
+    },
+    "lime": {
+      "title": "Software-Ingenieur",
+      "description": "Vorschlag und Implementierung einer internen Ruby-API zum Senden/Empfangen von Befehlen an Scooter über LTE-Netzwerke. Entwicklung eines vollautomatischen Fahrrad-Firmware-Update-Systems zur Handhabung asynchroner Firmware-Updates von über 100.000+ Scootern weltweit und Bereitstellung von Fortschrittsberichten in Echtzeit mit React, Ruby on Rails, PostgreSQL und AWS EC2, wodurch Hunderte von Entwicklerstunden gespart wurden."
+    },
+    "mitreMedia": {
+      "title": "Software-Ingenieur",
+      "description": "Design und Implementierung eines robusten Passwort-Verschlüsselungs- und Browser-Cookie-Speichersystems in Ruby on Rails. Nutzung der Yahoo Finance API zur Entwicklung des dividend.com Aktien-Screeners"
+    }
+  },
+  "education": {
+    "buildspace": {
+      "degree": "s3, s4, sf1, s5"
+    },
+    "waterloo": {
+      "degree": "Bachelor-Abschluss in Informatik (BCS)"
+    },
+    "laurier": {
+      "degree": "Bachelor-Abschluss in Betriebswirtschaft (BBA)"
+    },
+    "ib": {
+      "degree": "IB-Diplom"
+    }
+  },
+  "companies": {
+    "wiicode": {
+      "title": "Flutter-Entwickler",
+      "description": "TheCyrele Mobile Application Entwicklung mit sauberer Architektur und TDD-Ansatz.",
+      "tasks": [
+        "Hochpräzise Designs in vollständig responsive Flutter-Apps basierend auf sauberem und flexiblem Dart-Code umwandeln",
+        "Eine solide und saubere Architektur basierend auf Test Driven Development implementieren",
+        "Daten von Firebase Firestore, Realtime Database und benutzerdefinierten APIs abrufen und verwalten",
+        "Benutzern ermöglichen, Fahrten anzufordern, Fahrerdetails zu sehen und Zahlungen sicher zu verwalten",
+        "Das technische Team für den Start von BKG SPEED im Senegal verwalten",
+        "Einige Stresstests schreiben, um die App-Gesundheit und potenzielle Ausfälle zu überprüfen"
+      ]
+    },
+    "bkgspeed": {
+      "title": "Lead-Entwickler",
+      "description": "Leitung der Entwicklung stabiler mobiler Anwendungen mit Echtzeitverfolgung und Teammanagement.",
+      "tasks": [
+        "Das Design und die Entwicklung einer stabileren Version aller mobilen Anwendungen leiten",
+        "Echtzeitverfolgung von Fahrern mit Google Maps implementieren",
+        "Daten von Firebase Firestore, Realtime Database und benutzerdefinierten APIs abrufen und verwalten",
+        "Benutzern ermöglichen, Fahrten anzufordern, Fahrerdetails zu sehen und Zahlungen sicher zu verwalten",
+        "Das technische Team für den Start von BKG SPEED im Senegal verwalten",
+        "Einige Stresstests schreiben, um die App-Gesundheit und potenzielle Ausfälle zu überprüfen"
+      ]
+    },
+    "clickafrica": {
+      "title": "Lead Flutter-Entwickler",
+      "description": "KLIC: On-Demand-Service-App-Entwicklung mit umfassenden Funktionen und Teammanagement.",
+      "tasks": [
+        "Hochpräzise Designs in responsive Flutter-Apps umwandeln und UI-Anforderungen anwenden",
+        "Echtzeitverfolgung von Fahrern mit Google Maps implementieren",
+        "Daten von Firebase Firestore, Realtime Database und benutzerdefinierten APIs abrufen und verwalten",
+        "Benutzerauthentifizierung, Registrierung und Zahlungsfunktionen entwickeln",
+        "Benutzern ermöglichen, Fahrten anzufordern, Fahrerdetails zu sehen und Zahlungen sicher zu verwalten",
+        "Ein Bewertungs-, Review-System und Benachrichtigungen für Benutzerengagement implementieren",
+        "Zur Erstellung von Dashboards für Fahrer und Administratoren beitragen, um App-Daten und Analysen zu verwalten",
+        "Tests durchführen, Leistung optimieren und fehlerfreien App-Betrieb sicherstellen",
+        "CI/CD-Pipelines für automatisierte Tests, Bereitstellung und kontinuierliche Verbesserung einrichten",
+        "Umfassende Dokumentation für Code, Architektur und Sicherheitsmaßnahmen bereitstellen"
+      ]
+    },
+    "leotech": {
+      "title": "Software-Entwickler",
+      "description": "Full-Stack-Entwicklung und Wartung von Client-Anwendungen mit Web-Technologien.",
+      "tasks": [
+        "Verantwortlich für die Wartung und Aktualisierung von Client-Anwendungen",
+        "Verantwortlich für die Entwicklung der UNIMOON-Website mit ReactJS und TailwindCSS",
+        "Die Implementierung der GesPro-Software und Mitarbeiterschulung leiten",
+        "Verantwortlich für die Wartung und Aktualisierung der SGI-TOGO-Website und mobilen Anwendung"
+      ]
+    },
+    "plusservice": {
+      "title": "Software-Entwickler",
+      "description": "Desktop- und mobile Anwendungsentwicklung für Geschäftsverwaltungssysteme.",
+      "tasks": [
+        "Eine benutzerfreundliche Desktop-Anwendung mit Flutter für Unternehmensbuchhalter und Kassierer erstellen",
+        "Unternehmensverantwortlichen ermöglichen, Kundenkonten zu erstellen und zu verwalten",
+        "Daten von API abrufen und verwalten, die auf lokalen Servern läuft",
+        "Benutzerauthentifizierung und Passwort-Reset-Funktionen entwickeln",
+        "Hellen und dunklen Modus einrichten",
+        "Echtzeit-Datensynchronisation zwischen Anwendungsmodulen mit Socket.io verwalten",
+        "Tests durchführen, Leistung optimieren und fehlerfreien App-Betrieb sicherstellen",
+        "CI/CD-Pipelines für automatisierte Tests, Bereitstellung und kontinuierliche Verbesserung einrichten",
+        "Eine Android-Anwendung entwerfen und erstellen, die alle vom Unternehmen verkauften Produkte gruppiert",
+        "Synchronisierte Daten wie Preise und Verfügbarkeit über alle Unternehmensmitarbeiter mit Firebase Firestore halten",
+        "Produktbestellungen verwalten",
+        "Authentifizierung mit Google implementieren"
+      ]
+    }
+  },
+  "education": {
+    "wes": {
+      "degree": "Diplom-Äquivalenz durch World Education Service"
+    },
+    "aits": {
+      "degree": "Bachelor-Abschluss in Software Engineering"
+    },
+    "software": {
+      "degree": "Bachelor-Abschluss in Software Engineering"
+    },
+    "highschool": {
+      "degree": "Abitur"
+    }
+  },
+  "projectsData": {
+    "trendz": {
+      "description": "Event-Management-Plattform mit 3 mobilen Apps (iOS/Android) gebaut in Flutter. Beinhaltet Firebase-Authentifizierung, mobile Zahlungen, Echtzeit-Datensynchronisation und automatisierte CI/CD-Bereitstellung.",
+      "linkTypes": {
+        "ios": "iOS App",
+        "android": "Android App"
+      }
+    },
+    "molory": {
+      "description": "Mobile Anwendungssuite mit 3 Flutter-Apps für iOS und Android. Implementiert Firebase-Integration, lokales Caching mit Hive, Zahlungsverarbeitung und Benutzerfeedback-Systeme.",
+      "linkTypes": {
+        "ios": "iOS App",
+        "android": "Android App"
+      }
+    },
+    "thecyrele": {
+      "description": "Ride-Sharing mobile Anwendung gebaut mit Flutter unter Verwendung von Test Driven Development. Beinhaltet Echtzeit-Tracking, sichere Zahlungen und umfassendes Test-Framework.",
+      "linkTypes": {
+        "app": "Mobile App"
+      }
+    },
+    "klic": {
+      "description": "On-Demand-Service-App ähnlich Uber und Uber Eats. Gebaut mit Flutter mit Echtzeit-GPS-Tracking, Zahlungsintegration, Bewertungssystem und Admin-Dashboards.",
+      "linkTypes": {
+        "app": "Mobile App"
+      }
+    },
+    "pavs": {
+      "description": "Desktop-Anwendung für Kontoverwaltung gebaut mit Flutter. Beinhaltet Benutzerauthentifizierung, Echtzeit-Datensynchronisation mit Socket.io und duales Theme-Support.",
+      "linkTypes": {
+        "app": "Desktop App"
+      }
+    },
+    "cataloguePavsApp": {
+      "description": "Android-Produktkatalog-App mit Firebase-Integration. Verwaltet Produktinventar, Preise und Bestellungen mit Google-Authentifizierung.",
+      "linkTypes": {
+        "app": "Android App"
+      }
+    }
+  },
+  "hackathonsData": {
+    "hackWestern5": {
+      "description": "Entwicklung einer mobilen Anwendung, die Kindern Gute-Nacht-Geschichten mit Augmented Reality liefert."
+    },
+    "hackTheNorth2018": {
+      "description": "Entwicklung einer mobilen Anwendung, die universitätsweite Ereignisse in Echtzeit an alle Studenten liefert."
+    },
+    "firstNet": {
+      "description": "Entwicklung einer mobilen Anwendung, die medizinische Daten eines Opfers aus einem Krankenwagen an Ärzte im Krankenhaus übermittelt."
+    },
+    "developerWeek": {
+      "description": "Entwicklung einer Webanwendung, die Social-Media-Daten zu Kryptowährungen aggregiert und zukünftige Preise vorhersagt."
+    },
+    "hackDavis": {
+      "description": "Entwicklung einer mobilen Anwendung, die Benutzern eine tägliche Kohlenstoffemissions-Zuteilung zuweist, um sich in Richtung einer nachhaltigen Umgebung zu bewegen.",
+      "win": "Bester Daten-Hack"
+    },
+    "ethWaterloo": {
+      "description": "Entwicklung einer Blockchain-Anwendung für Ärzte und Apotheker zur Durchführung vertrauensloser Transaktionen und Prävention von Überdosierungen bei Patienten."
+    },
+    "hackTheNorth2017": {
+      "description": "Entwicklung einer Virtual-Reality-Anwendung, die es Benutzern ermöglicht, sich selbst in der dritten Person zu sehen."
+    },
+    "hackThe6ix": {
+      "description": "Entwicklung einer offenen Plattform für Personen, die Artikel an denselben Ort versenden, um Versandkosten zu kombinieren und Geld zu sparen."
+    },
+    "globalAI": {
+      "description": "Entwicklung einer Python-Bibliothek, die in jedes Python-Spiel importiert werden kann und die Schwierigkeit des Spiels basierend auf der Echtzeit-Emotion des Spielers ändern kann. Verwendet OpenCV und Webcam für Gesichtserkennung und ein benutzerdefiniertes Machine-Learning-Modell, das auf einem [Kaggle Emotion Dataset](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/leaderboard) mit [Tensorflow](https://www.tensorflow.org/Tensorflow) und [Keras](https://keras.io/) trainiert wurde. Dieses Projekt erhielt den 1. Platz beim Global AI Hackathon - Toronto und wurde auch eingeladen, bei [NextAI Canada](https://www.nextcanada.com/next-ai) zu demonstrieren.",
+      "win": "1. Platz Gewinner"
+    }
+  }
+}

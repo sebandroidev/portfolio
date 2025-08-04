@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "blog": "Blog",
+    "theme": "Thème",
+    "language": "Langue"
+  },
+  "hero": {
+    "greeting": "Salut, je suis {name} 👋"
+  },
+  "sections": {
+    "about": "À propos",
+    "work": "Expérience professionnelle",
+    "education": "Formation",
+    "skills": "Compétences",
+    "projects": "Mes projets",
+    "contact": "Contact"
+  },
+  "projects": {
+    "title": "Découvrez mes derniers travaux",
+    "description": "J'ai travaillé sur une variété de projets, des sites web simples aux applications web complexes. Voici quelques-uns de mes préférés.",
+    "viewAll": "Voir les {count} Projets"
+  },
+  "contact": {
+    "title": "Prenons contact",
+    "description": "Envie de discuter ? Envoyez-moi simplement un message direct avec une question directe sur Twitter et je répondrai dès que possible. J'ignorerai tout démarchage."
+  },
+  "work": {
+    "present": "Présent"
+  },
+  "profile": {
+    "location": "San Francisco, CA",
+    "description": "Développeur Mobile Expérimenté & Ingénieur Logiciel spécialisé dans le développement d'applications innovantes et les solutions de design centrées sur l'utilisateur.",
+    "summary": "Un développeur mobile qualifié avec plus de 5 ans d'expérience dans le développement d'applications, la conception UI/UX et l'innovation. Maîtrisant les technologies et frameworks mobiles modernes, j'ai livré avec succès des solutions centrées sur l'utilisateur sur diverses plateformes. Avec une forte expertise en gestion de projet et un engagement envers l'excellence, je me spécialise dans la création d'applications de haute qualité qui dépassent les attentes des clients et stimulent un engagement utilisateur significatif."
+  },
+  "social": {
+    "sendEmail": "Envoyer un Email"
+  },
+  "companies": {
+    "wiicode": {
+      "title": "Développeur Flutter",
+      "description": "Développement d'application mobile TheCyrele avec architecture propre et approche TDD.",
+      "tasks": [
+        "Convertir des designs haute-fidélité en applications Flutter entièrement responsives basées sur du code Dart propre et flexible",
+        "Implémenter une architecture solide et propre basée sur le Test Driven Development",
+        "Récupérer et gérer les données depuis Firebase Firestore, Realtime Database et APIs personnalisées",
+        "Permettre aux utilisateurs de demander des courses, voir les détails du conducteur et gérer les paiements de manière sécurisée",
+        "Gérer l'équipe technique pour le lancement de BKG SPEED au Sénégal",
+        "Écrire des tests de stress pour vérifier la santé de l'application et les pannes potentielles"
+      ]
+    },
+    "bkgspeed": {
+      "title": "Développeur Principal",
+      "description": "Direction du développement d'applications mobiles stables avec suivi en temps réel et gestion d'équipe.",
+      "tasks": [
+        "Diriger la conception et le développement d'une version plus stable de toutes les applications mobiles",
+        "Implémenter le suivi des conducteurs en temps réel en utilisant Google Maps",
+        "Récupérer et gérer les données depuis Firebase Firestore, Realtime Database et APIs personnalisées",
+        "Permettre aux utilisateurs de demander des courses, voir les détails du conducteur et gérer les paiements de manière sécurisée",
+        "Gérer l'équipe technique pour le lancement de BKG SPEED au Sénégal",
+        "Écrire des tests de stress pour vérifier la santé de l'application et les pannes potentielles"
+      ]
+    },
+    "clickafrica": {
+      "title": "Développeur Flutter Principal",
+      "description": "KLIC: Développement d'application de service à la demande avec fonctionnalités complètes et gestion d'équipe.",
+      "tasks": [
+        "Convertir des designs haute-fidélité en applications Flutter responsives et appliquer les exigences UI",
+        "Implémenter le suivi des conducteurs en temps réel en utilisant Google Maps",
+        "Récupérer et gérer les données depuis Firebase Firestore, Realtime Database et APIs personnalisées",
+        "Développer l'authentification utilisateur, l'inscription et les fonctionnalités de paiement",
+        "Permettre aux utilisateurs de demander des courses, voir les détails du conducteur et gérer les paiements de manière sécurisée",
+        "Implémenter un système d'évaluation, de commentaires et de notifications pour l'engagement utilisateur",
+        "Contribuer à la construction de tableaux de bord pour les conducteurs et administrateurs pour gérer les données et analyses de l'application",
+        "Effectuer des tests, optimiser les performances et assurer un fonctionnement sans bug de l'application",
+        "Mettre en place des pipelines CI/CD pour les tests automatisés, le déploiement et l'amélioration continue",
+        "Fournir une documentation complète pour le code, l'architecture et les mesures de sécurité"
+      ]
+    },
+    "leotech": {
+      "title": "Développeur Logiciel",
+      "description": "Développement full-stack et maintenance d'applications client avec technologies web.",
+      "tasks": [
+        "Responsable de la maintenance et mise à jour des applications clients",
+        "Responsable du développement du site web UNIMOON en utilisant ReactJS et TailwindCSS",
+        "Diriger l'implémentation du logiciel GesPro et la formation du personnel",
+        "Responsable de la maintenance et mise à jour du site web et application mobile SGI-TOGO"
+      ]
+    },
+    "plusservice": {
+      "title": "Développeur Logiciel",
+      "description": "Développement d'applications desktop et mobile pour systèmes de gestion d'entreprise.",
+      "tasks": [
+        "Construire une application desktop conviviale avec Flutter pour comptable et caissier d'entreprise",
+        "Permettre au responsable d'entreprise de créer et gérer les comptes clients",
+        "Récupérer et gérer les données depuis l'API fonctionnant sur serveurs locaux",
+        "Développer l'authentification utilisateur et les fonctionnalités de réinitialisation de mot de passe",
+        "Mettre en place le mode clair et sombre",
+        "Gérer la synchronisation des données en temps réel entre les modules d'application en utilisant Socket.io",
+        "Effectuer des tests, optimiser les performances et assurer un fonctionnement sans bug de l'application",
+        "Mettre en place des pipelines CI/CD pour les tests automatisés, le déploiement et l'amélioration continue",
+        "Concevoir et construire une application Android regroupant tous les produits vendus par l'entreprise",
+        "Maintenir les données synchronisées comme les prix et disponibilité à travers tous les employés de l'entreprise en utilisant Firebase Firestore",
+        "Gérer les commandes de produits",
+        "Implémenter l'authentification en utilisant Google"
+      ]
+    }
+  },
+  "education": {
+    "wes": {
+      "degree": "Équivalence de Diplôme de Licence par World Education Service"
+    },
+    "aits": {
+      "degree": "Licence en Génie Logiciel"
+    },
+    "highschool": {
+      "degree": "Diplôme de Fin d'Études Secondaires"
+    }
+  },
+  "projectsData": {
+    "trendz": {
+      "description": "Plateforme de gestion d'événements avec 3 applications mobiles (iOS/Android) construites en Flutter. Comprend l'authentification Firebase, les paiements mobiles, la synchronisation de données en temps réel et le déploiement CI/CD automatisé.",
+      "linkTypes": {
+        "ios": "App iOS",
+        "android": "App Android"
+      }
+    },
+    "molory": {
+      "description": "Suite d'applications mobiles avec 3 apps Flutter pour iOS et Android. Implémente l'intégration Firebase, la mise en cache locale avec Hive, le traitement des paiements et les systèmes de retour utilisateur.",
+      "linkTypes": {
+        "ios": "App iOS",
+        "android": "App Android"
+      }
+    },
+    "thecyrele": {
+      "description": "Application mobile de transport développée avec Flutter utilisant une architecture propre et TDD. Comprend le suivi en temps réel, l'authentification et l'intégration Firebase.",
+      "linkTypes": {
+        "app": "Application"
+      }
+    },
+    "klic": {
+      "description": "Application de service à la demande avec fonctionnalités complètes construite en Flutter. Comprend le suivi en temps réel, les paiements, les évaluations et la gestion des utilisateurs.",
+      "linkTypes": {
+        "app": "Application"
+      }
+    },
+    "pavs": {
+      "description": "Application desktop de gestion d'entreprise développée avec Flutter. Comprend la gestion des comptes clients, la synchronisation en temps réel avec Socket.io et les modes sombre/clair.",
+      "linkTypes": {
+        "app": "Application"
+      }
+    },
+    "cataloguePavsApp": {
+      "description": "Application Android native développée en Java pour la gestion du catalogue de produits d'entreprise. Comprend l'authentification Google et la synchronisation Firebase.",
+      "linkTypes": {
+        "app": "Application"
+      }
+    }
+  }
+}
