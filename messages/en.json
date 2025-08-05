@@ -2,9 +2,13 @@
   "nav": {
     "home": "Home",
     "projects": "Projects",
+    "resume": "Resume",
     "blog": "Blog",
     "theme": "Theme",
-    "language": "Language"
+    "language": "Language",
+    "downloadResume": "Download Resume",
+    "generating": "Generating PDF...",
+    "socialLinks": "Social Links"
   },
   "hero": {
     "greeting": "Hi, I'm {name} 👋"
@@ -40,70 +44,57 @@
   "companies": {
     "wiicode": {
       "title": "Flutter Developer",
-      "description": "TheCyrele Mobile Application development with clean architecture and TDD approach.",
+      "description": "Developed TheCyrcle car rental app and Fatou home automation app using Flutter with TDD approach and RESTful API integration.",
       "tasks": [
-        "Convert high-fidelity designs into fully responsive Flutter apps based on a clean and flexible Dart code",
-        "Implement a solid and clean architecture based on Test Driven Development",
-        "Fetch and manage data from Firebase Firestore, Realtime Database, and custom APIs",
-        "Allow users to request rides, view driver details, and handle payments securely",
-        "Managed the technical team for the launch of BKG SPEED in Senegal",
-        "Write some stress tests to check the app health and potential failures"
+        "Developed TheCyrcle, a cross-platform car rental app using Flutter and TDD",
+        "Translated high-fidelity Figma designs into functional mobile applications",
+        "Built Fatou, a complex home automation app with over 50 screens",
+        "Collaborated with backend teams to align mobile features with API structures",
+        "Maintained clean, scalable, and well-documented code for long-term maintainability"
       ]
     },
     "bkgspeed": {
-      "title": "Lead Developer",
-      "description": "Led development of stable mobile applications with real-time tracking and team management.",
+      "title": "Lead Software Engineer",
+      "description": "Led mobile app redesign with real-time tracking and team management for successful launch in Senegal.",
       "tasks": [
-        "Led the design and the development of a more stable version of all mobile applications",
-        "Implement real-time driver tracking using Google Maps",
-        "Fetch and manage data from Firebase Firestore, Realtime Database, and custom APIs",
-        "Allow users to request rides, view driver details, and handle payments securely",
-        "Managed the technical team for the launch of BKG SPEED in Senegal",
-        "Write some stress tests to check the app health and potential failures"
+        "Spearheaded redesign and development of stable and scalable mobile applications",
+        "Implemented real-time driver tracking using Google Maps SDK",
+        "Integrated data flows from Firebase Firestore, Realtime Database, and custom APIs",
+        "Developed secure ride requests, driver profiles, and payment processing features",
+        "Led technical team for successful BKG Speed launch in Senegal",
+        "Conducted stress testing and performance analysis for app reliability"
       ]
     },
-    "clickafrica": {
-      "title": "Lead Flutter Developer",
-      "description": "KLIC: On-demand service app development with comprehensive features and team management.",
+    "aekgroup": {
+      "title": "Software Engineer",
+      "description": "Developed Pay'ici mobile app for USSD code management with dual SIM support and custom Flutter plugins.",
       "tasks": [
-        "Convert high-fidelity designs into responsive Flutter apps and apply UI requirements",
-        "Implement real-time driver tracking using Google Maps",
-        "Fetch and manage data from Firebase Firestore, Realtime Database, and custom APIs",
-        "Develop user authentication, registration, and payment features",
-        "Allow users to request rides, view driver details, and handle payments securely",
-        "Implement a rating, review system, and notifications for user engagement",
-        "Contributed to build dashboards for drivers and admins to manage app data and analytics",
-        "Conduct testing, optimize performance, and ensure bug-free app operation",
-        "Set up CI/CD pipelines for automated testing, deployment, and continuous improvement",
-        "Provide comprehensive documentation for code, architecture, and security measures"
+        "Developed Pay'ici cross-platform app for Togolese mobile operator USSD codes",
+        "Designed fully offline experience with periodic updates from Firebase Firestore",
+        "Engineered dual SIM support with custom Flutter plugin and native Kotlin code",
+        "Consolidated hundreds of USSD codes into user-friendly interface",
+        "Ensured high performance and platform consistency using Flutter"
       ]
     },
     "leotech": {
       "title": "Software Developer",
-      "description": "Full-stack development and client application maintenance with web technologies.",
+      "description": "Maintained client applications and developed UNIMOON website using ReactJS and TailwindCSS.",
       "tasks": [
-        "Responsible for maintaining and updating client applications",
-        "Responsible for the development of the UNIMOON website using ReactJS and TailwindCSS",
-        "Lead the implementation of GesPro software and staff training",
-        "Responsible for maintaining and updating the SGI-TOGO website and mobile application"
+        "Maintained and updated various client applications for stability and performance",
+        "Developed UNIMOON website using ReactJS and TailwindCSS",
+        "Led implementation of GesPro management software with staff training",
+        "Managed updates and improvements for SGI-TOGO website and mobile application"
       ]
     },
     "plusservice": {
       "title": "Software Developer",
-      "description": "Desktop and mobile application development for business management systems.",
+      "description": "Built PAVS Account Manager desktop app and Catalogue PAVS Android app with real-time data synchronization.",
       "tasks": [
-        "Build a user-friendly desktop application with Flutter for company accountant and cashier",
-        "Allow company responsible to create and manage customers accounts",
-        "Fetch and manage data from API running on local servers",
-        "Develop user authentication and password reset features",
-        "Set up light and dark mode",
-        "Managed realtime data synchronization between the application modules using Socket.io",
-        "Conduct testing, optimize performance, and ensure bug-free app operation",
-        "Set up CI/CD pipelines for automated testing, deployment, and continuous improvement",
-        "Designed and built an Android application grouping all the products sold by the company",
-        "Kept synced datas like prices and availability across all company employees using Firebase Firestore",
-        "Handled product orders",
-        "Implemented authentication using Google"
+        "Built PAVS Account Manager desktop app using Flutter and Socket.io",
+        "Developed user authentication, password reset, and light/dark mode theming",
+        "Created real-time customer account management with local API integration",
+        "Designed Catalogue PAVS Android app with Firebase Firestore integration",
+        "Implemented Google authentication and real-time product updates"
       ]
     }
   },

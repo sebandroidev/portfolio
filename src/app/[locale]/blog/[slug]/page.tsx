@@ -1,5 +1,5 @@
 import { getBlogPosts, getPost } from "@/data/blog";
-import { DATA } from "@/data/resume";
+import { STATIC_DATA } from "@/data/resume-i18n";
 import { formatDate } from "@/lib/utils";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -26,7 +26,7 @@ export async function generateMetadata({
     summary: description,
     image,
   } = post.metadata;
-  let ogImage = image ? `${DATA.url}${image}` : `${DATA.url}/og?title=${title}`;
+  let ogImage = image ? `${STATIC_DATA.url}${image}` : `${STATIC_DATA.url}/og?title=${title}`;
 
   return {
     title,
@@ -36,7 +36,7 @@ export async function generateMetadata({
       description,
       type: "article",
       publishedTime,
-      url: `${DATA.url}/blog/${post.slug}`,
+      url: `${STATIC_DATA.url}/blog/${post.slug}`,
       images: [
         {
           url: ogImage,
@@ -80,12 +80,12 @@ export default async function Blog({
             dateModified: post.metadata.publishedAt,
             description: post.metadata.summary,
             image: post.metadata.image
-              ? `${DATA.url}${post.metadata.image}`
-              : `${DATA.url}/og?title=${post.metadata.title}`,
-            url: `${DATA.url}/blog/${post.slug}`,
+              ? `${STATIC_DATA.url}${post.metadata.image}`
+              : `${STATIC_DATA.url}/og?title=${post.metadata.title}`,
+            url: `${STATIC_DATA.url}/blog/${post.slug}`,
             author: {
               "@type": "Person",
-              name: DATA.name,
+              name: STATIC_DATA.name,
             },
           }),
         }}

@@ -1,7 +1,7 @@
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { DATA } from "@/data/resume";
+import { STATIC_DATA } from "@/data/resume-i18n";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
@@ -20,10 +20,10 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(DATA.url),
+  metadataBase: new URL(STATIC_DATA.url),
   title: {
-    default: `${DATA.name} - Experienced Mobile Developer & Software Engineer`,
-    template: `%s | ${DATA.name}`,
+    default: `${STATIC_DATA.name} - Experienced Mobile Developer & Software Engineer`,
+    template: `%s | ${STATIC_DATA.name}`,
   },
   description: "Experienced Mobile Developer & Software Engineer specializing in Flutter, React Native, and innovative mobile applications. 5+ years of experience creating user-centered design solutions.",
   keywords: [
@@ -45,19 +45,19 @@ export const metadata: Metadata = {
     "Lomé",
     "Togo"
   ],
-  authors: [{ name: DATA.name, url: DATA.url }],
-  creator: DATA.name,
-  publisher: DATA.name,
+  authors: [{ name: STATIC_DATA.name, url: STATIC_DATA.url }],
+  creator: STATIC_DATA.name,
+  publisher: STATIC_DATA.name,
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: `${DATA.name} - Experienced Mobile Developer & Software Engineer`,
+    title: `${STATIC_DATA.name} - Experienced Mobile Developer & Software Engineer`,
     description: "Experienced Mobile Developer & Software Engineer specializing in Flutter, React Native, and innovative mobile applications. 5+ years of experience creating user-centered design solutions.",
-    url: DATA.url,
-    siteName: `${DATA.name} Portfolio`,
+    url: STATIC_DATA.url,
+    siteName: `${STATIC_DATA.name} Portfolio`,
     locale: "en_US",
     type: "website",
     images: [
@@ -65,13 +65,13 @@ export const metadata: Metadata = {
         url: '/cartoon-avatar.png',
         width: 400,
         height: 400,
-        alt: `${DATA.name} - Mobile Developer Profile Picture`,
+        alt: `${STATIC_DATA.name} - Mobile Developer Profile Picture`,
       },
       {
         url: '/logo.png',
         width: 1200,
         height: 630,
-        alt: `${DATA.name} Portfolio Logo`,
+        alt: `${STATIC_DATA.name} Portfolio Logo`,
       },
     ],
   },
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${DATA.name} - Mobile Developer & Software Engineer`,
+    title: `${STATIC_DATA.name} - Mobile Developer & Software Engineer`,
     description: "Experienced Mobile Developer specializing in Flutter, React Native, and innovative mobile applications.",
     site: "@devbyseb",
     creator: "@devbyseb",

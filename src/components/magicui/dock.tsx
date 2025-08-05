@@ -82,7 +82,11 @@ const DockIcon = ({
 }: DockIconProps) => {
   const ref = useRef<HTMLDivElement>(null);
 
-  const distanceCalc = useTransform(mousex, (val: number) => {
+  // Create a default mousex value if not provided
+  const defaultMousex = useMotionValue(Infinity);
+  const mouseMotionValue = mousex || defaultMousex;
+
+  const distanceCalc = useTransform(mouseMotionValue, (val: number) => {
     const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
     return val - bounds.x - bounds.width / 2;
   });

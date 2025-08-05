@@ -2,9 +2,13 @@
   "nav": {
     "home": "Accueil",
     "projects": "Projets",
+    "resume": "CV",
     "blog": "Blog",
     "theme": "Thème",
-    "language": "Langue"
+    "language": "Langue",
+    "downloadResume": "Télécharger CV",
+    "generating": "Génération PDF...",
+    "socialLinks": "Liens Sociaux"
   },
   "hero": {
     "greeting": "Salut, je suis {name} 👋"
@@ -40,70 +44,57 @@
   "companies": {
     "wiicode": {
       "title": "Développeur Flutter",
-      "description": "Développement d'application mobile TheCyrele avec architecture propre et approche TDD.",
+      "description": "Développement de l'application TheCyrcle de location de voitures et Fatou d'automatisation domestique en Flutter avec approche TDD.",
       "tasks": [
-        "Convertir des designs haute-fidélité en applications Flutter entièrement responsives basées sur du code Dart propre et flexible",
-        "Implémenter une architecture solide et propre basée sur le Test Driven Development",
-        "Récupérer et gérer les données depuis Firebase Firestore, Realtime Database et APIs personnalisées",
-        "Permettre aux utilisateurs de demander des courses, voir les détails du conducteur et gérer les paiements de manière sécurisée",
-        "Gérer l'équipe technique pour le lancement de BKG SPEED au Sénégal",
-        "Écrire des tests de stress pour vérifier la santé de l'application et les pannes potentielles"
+        "Développé TheCyrcle, une application de location de voitures multiplateforme avec Flutter et TDD",
+        "Traduit des designs Figma haute-fidélité en applications mobiles fonctionnelles",
+        "Construit Fatou, une application d'automatisation domestique complexe avec plus de 50 écrans",
+        "Collaboré avec les équipes backend pour aligner les fonctionnalités mobiles avec les structures API",
+        "Maintenu un code propre, évolutif et bien documenté pour la maintenabilité à long terme"
       ]
     },
     "bkgspeed": {
-      "title": "Développeur Principal",
-      "description": "Direction du développement d'applications mobiles stables avec suivi en temps réel et gestion d'équipe.",
+      "title": "Ingénieur Logiciel Principal",
+      "description": "Direction de la refonte d'applications mobiles avec suivi en temps réel et gestion d'équipe pour un lancement réussi au Sénégal.",
       "tasks": [
-        "Diriger la conception et le développement d'une version plus stable de toutes les applications mobiles",
-        "Implémenter le suivi des conducteurs en temps réel en utilisant Google Maps",
-        "Récupérer et gérer les données depuis Firebase Firestore, Realtime Database et APIs personnalisées",
-        "Permettre aux utilisateurs de demander des courses, voir les détails du conducteur et gérer les paiements de manière sécurisée",
-        "Gérer l'équipe technique pour le lancement de BKG SPEED au Sénégal",
-        "Écrire des tests de stress pour vérifier la santé de l'application et les pannes potentielles"
+        "Dirigé la refonte et le développement d'applications mobiles stables et évolutives",
+        "Implémenté le suivi des conducteurs en temps réel avec Google Maps SDK",
+        "Intégré les flux de données de Firebase Firestore, Realtime Database et APIs personnalisées",
+        "Développé des fonctionnalités sécurisées pour les demandes de course, profils conducteurs et paiements",
+        "Dirigé l'équipe technique pour le lancement réussi de BKG Speed au Sénégal",
+        "Effectué des tests de stress et analyses de performance pour la fiabilité de l'application"
       ]
     },
-    "clickafrica": {
-      "title": "Développeur Flutter Principal",
-      "description": "KLIC: Développement d'application de service à la demande avec fonctionnalités complètes et gestion d'équipe.",
+    "aekgroup": {
+      "title": "Ingénieur Logiciel",
+      "description": "Développement de l'application mobile Pay'ici pour la gestion des codes USSD avec support dual SIM et plugins Flutter personnalisés.",
       "tasks": [
-        "Convertir des designs haute-fidélité en applications Flutter responsives et appliquer les exigences UI",
-        "Implémenter le suivi des conducteurs en temps réel en utilisant Google Maps",
-        "Récupérer et gérer les données depuis Firebase Firestore, Realtime Database et APIs personnalisées",
-        "Développer l'authentification utilisateur, l'inscription et les fonctionnalités de paiement",
-        "Permettre aux utilisateurs de demander des courses, voir les détails du conducteur et gérer les paiements de manière sécurisée",
-        "Implémenter un système d'évaluation, de commentaires et de notifications pour l'engagement utilisateur",
-        "Contribuer à la construction de tableaux de bord pour les conducteurs et administrateurs pour gérer les données et analyses de l'application",
-        "Effectuer des tests, optimiser les performances et assurer un fonctionnement sans bug de l'application",
-        "Mettre en place des pipelines CI/CD pour les tests automatisés, le déploiement et l'amélioration continue",
-        "Fournir une documentation complète pour le code, l'architecture et les mesures de sécurité"
+        "Développé Pay'ici, application multiplateforme pour les codes USSD des opérateurs mobiles togolais",
+        "Conçu une expérience entièrement hors ligne avec mises à jour périodiques depuis Firebase Firestore",
+        "Développé le support dual SIM avec plugin Flutter personnalisé et code Kotlin natif",
+        "Consolidé des centaines de codes USSD dans une interface conviviale",
+        "Assuré haute performance et cohérence multiplateforme avec Flutter"
       ]
     },
     "leotech": {
       "title": "Développeur Logiciel",
-      "description": "Développement full-stack et maintenance d'applications client avec technologies web.",
+      "description": "Maintenance d'applications clients et développement du site web UNIMOON avec ReactJS et TailwindCSS.",
       "tasks": [
-        "Responsable de la maintenance et mise à jour des applications clients",
-        "Responsable du développement du site web UNIMOON en utilisant ReactJS et TailwindCSS",
-        "Diriger l'implémentation du logiciel GesPro et la formation du personnel",
-        "Responsable de la maintenance et mise à jour du site web et application mobile SGI-TOGO"
+        "Maintenu et mis à jour diverses applications clients pour stabilité et performance",
+        "Développé le site web UNIMOON avec ReactJS et TailwindCSS",
+        "Dirigé l'implémentation du logiciel de gestion GesPro avec formation du personnel",
+        "Géré les mises à jour et améliorations du site web et application mobile SGI-TOGO"
       ]
     },
     "plusservice": {
       "title": "Développeur Logiciel",
-      "description": "Développement d'applications desktop et mobile pour systèmes de gestion d'entreprise.",
+      "description": "Construction de l'application desktop PAVS Account Manager et l'application Android Catalogue PAVS avec synchronisation de données en temps réel.",
       "tasks": [
-        "Construire une application desktop conviviale avec Flutter pour comptable et caissier d'entreprise",
-        "Permettre au responsable d'entreprise de créer et gérer les comptes clients",
-        "Récupérer et gérer les données depuis l'API fonctionnant sur serveurs locaux",
-        "Développer l'authentification utilisateur et les fonctionnalités de réinitialisation de mot de passe",
-        "Mettre en place le mode clair et sombre",
-        "Gérer la synchronisation des données en temps réel entre les modules d'application en utilisant Socket.io",
-        "Effectuer des tests, optimiser les performances et assurer un fonctionnement sans bug de l'application",
-        "Mettre en place des pipelines CI/CD pour les tests automatisés, le déploiement et l'amélioration continue",
-        "Concevoir et construire une application Android regroupant tous les produits vendus par l'entreprise",
-        "Maintenir les données synchronisées comme les prix et disponibilité à travers tous les employés de l'entreprise en utilisant Firebase Firestore",
-        "Gérer les commandes de produits",
-        "Implémenter l'authentification en utilisant Google"
+        "Construit PAVS Account Manager, application desktop avec Flutter et Socket.io",
+        "Développé authentification utilisateur, réinitialisation mot de passe et thèmes clair/sombre",
+        "Créé gestion de comptes clients en temps réel avec intégration d'API locale",
+        "Conçu Catalogue PAVS, application Android avec intégration Firebase Firestore",
+        "Implémenté authentification Google et mises à jour produits en temps réel"
       ]
     }
   },

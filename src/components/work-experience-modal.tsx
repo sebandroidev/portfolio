@@ -2,12 +2,14 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 interface WorkExperienceModalProps {
   isVisible: boolean;
   position: { x: number; y: number };
   company: string;
   companyKey: string;
+  logoUrl: string;
   onClose: () => void;
 }
 
@@ -16,6 +18,7 @@ export function WorkExperienceModal({
   position, 
   company, 
   companyKey, 
+  logoUrl,
   onClose 
 }: WorkExperienceModalProps) {
   const t = useTranslations();
@@ -44,9 +47,18 @@ export function WorkExperienceModal({
     >
       <div className="space-y-3">
         <div className="flex items-center justify-between">
-          <h3 className="font-semibold text-sm text-foreground">
-            {company}
-          </h3>
+          <div className="flex items-center gap-2">
+            <Image 
+              src={logoUrl} 
+              alt={`${company} logo`}
+              width={24}
+              height={24}
+              className="w-6 h-6 rounded-sm object-contain"
+            />
+            <h3 className="font-semibold text-sm text-foreground">
+              {company}
+            </h3>
+          </div>
           <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
             {t(`companies.${companyKey}.title`)}
           </span>

@@ -2,9 +2,13 @@
   "nav": {
     "home": "Início",
     "projects": "Projetos",
+    "resume": "Currículo",
     "blog": "Blog",
     "theme": "Tema",
-    "language": "Idioma"
+    "language": "Idioma",
+    "downloadResume": "Baixar Currículo",
+    "generating": "Gerando PDF...",
+    "socialLinks": "Links Sociais"
   },
   "hero": {
     "greeting": "Oi, eu sou {name} 👋"
@@ -43,127 +47,71 @@
     "sendEmail": "Enviar Email"
   },
   "companies": {
-    "atomicFinance": {
-      "title": "Engenheiro de Protocolo Bitcoin",
-      "description": "Implementação das especificações do protocolo de contrato logarítmico discreto Bitcoin (DLC) como um SDK TypeScript de código aberto. Dockerização de todos os microsserviços e configuração de cluster kubernetes de produção. Arquitetura de um data lake usando AWS S3 e Athena para backtesting histórico de estratégias de trading bitcoin. Construção de um aplicativo mobile usando React Native e TypeScript."
-    },
-    "shopify": {
-      "title": "Engenheiro de Software",
-      "description": "Implementação de um controller Kubernetes personalizado em Go para automatizar o deployment de recursos personalizados MySQL e ProxySQL para permitir que mais de 2.000 desenvolvedores internos fizessem deploy instantâneo de suas bases de dados de aplicativos para produção. Escrevi vários scripts em Go para automatizar failovers de base de dados MySQL mantendo topologias de replicação master-slave e mantendo nós Zookeeper consistentes com mudanças."
-    },
-    "nvidia": {
-      "title": "Engenheiro de Software",
-      "description": "Arquitetura e escrita de todo o MVP do painel administrativo interno e dashboard de testes A/B do GeForce Now Cloud Gaming usando React, Redux, TypeScript e Python."
-    },
-    "splunk": {
-      "title": "Engenheiro de Software",
-      "description": "Co-desenvolvimento de um protótipo de aplicativo iOS com outro estagiário em Swift para o novo produto de orquestração de segurança Splunk Phantom (posteriormente demonstrado publicamente e lançado na conferência anual .conf em Las Vegas). Implementação de um serviço em tempo real para o aplicativo iOS em Django (Python) e C++; serialização de dados usando protobufs transmitidos via gRPC resultando em aproximadamente 500% de aumento no throughput de dados."
-    },
-    "lime": {
-      "title": "Engenheiro de Software",
-      "description": "Proposta e implementação de uma API ruby interna para enviar/receber comandos para scooters via redes LTE. Desenvolvimento de um sistema totalmente automatizado de atualização de firmware de bicicletas para lidar com atualizações assíncronas de firmware de mais de 100.000 scooters em todo o mundo, e fornecer relatórios de progresso em tempo real usando React, Ruby on Rails, PostgreSQL e AWS EC2 economizando centenas de horas de desenvolvimento."
-    },
-    "mitreMedia": {
-      "title": "Engenheiro de Software",
-      "description": "Design e implementação de um sistema robusto de criptografia de senhas e armazenamento de cookies do navegador em Ruby on Rails. Alavancagem da API do Yahoo finance para desenvolver o screener de ações dividend.com"
-    }
-  },
-  "education": {
-    "buildspace": {
-      "degree": "s3, s4, sf1, s5"
-    },
-    "waterloo": {
-      "degree": "Bacharelado em Ciência da Computação (BCS)"
-    },
-    "laurier": {
-      "degree": "Bacharelado em Administração de Empresas (BBA)"
-    },
-    "ib": {
-      "degree": "Diploma IB"
-    }
-  },
-  "companies": {
     "wiicode": {
       "title": "Desenvolvedor Flutter",
-      "description": "Desenvolvimento de aplicação móvel TheCyrele com arquitetura limpa e abordagem TDD.",
+      "description": "Desenvolvimento do app de aluguel de carros TheCyrcle e app de automação residencial Fatou usando Flutter com abordagem TDD.",
       "tasks": [
-        "Converter designs de alta fidelidade em aplicações Flutter totalmente responsivas baseadas em código Dart limpo e flexível",
-        "Implementar uma arquitetura sólida e limpa baseada em Test Driven Development",
-        "Buscar e gerenciar dados do Firebase Firestore, Realtime Database e APIs personalizadas",
-        "Permitir aos usuários solicitar corridas, ver detalhes do motorista e gerenciar pagamentos com segurança",
-        "Gerenciar a equipe técnica para o lançamento do BKG SPEED no Senegal",
-        "Escrever alguns testes de estresse para verificar a saúde da aplicação e possíveis falhas"
+        "Desenvolveu TheCyrcle, app de aluguel de carros multiplataforma com Flutter e TDD",
+        "Traduziu designs Figma de alta fidelidade em aplicações móveis funcionais",
+        "Construiu Fatou, app complexo de automação residencial com mais de 50 telas",
+        "Colaborou com equipes backend para alinhar recursos móveis com estruturas de API",
+        "Manteve código limpo, escalável e bem documentado para manutenibilidade a longo prazo"
       ]
     },
     "bkgspeed": {
-      "title": "Desenvolvedor Líder",
-      "description": "Liderou o desenvolvimento de aplicações móveis estáveis com rastreamento em tempo real e gerenciamento de equipe.",
+      "title": "Engenheiro de Software Líder",
+      "description": "Liderou redesign de apps móveis com rastreamento em tempo real e gestão de equipe para lançamento bem-sucedido no Senegal.",
       "tasks": [
-        "Liderar o design e desenvolvimento de uma versão mais estável de todas as aplicações móveis",
-        "Implementar rastreamento de motorista em tempo real usando Google Maps",
-        "Buscar e gerenciar dados do Firebase Firestore, Realtime Database e APIs personalizadas",
-        "Permitir aos usuários solicitar corridas, ver detalhes do motorista e gerenciar pagamentos com segurança",
-        "Gerenciar a equipe técnica para o lançamento do BKG SPEED no Senegal",
-        "Escrever alguns testes de estresse para verificar a saúde da aplicação e possíveis falhas"
+        "Liderou redesign e desenvolvimento de aplicações móveis estáveis e escaláveis",
+        "Implementou rastreamento de motoristas em tempo real usando Google Maps SDK",
+        "Integrou fluxos de dados do Firebase Firestore, Realtime Database e APIs customizadas",
+        "Desenvolveu recursos seguros para solicitações de viagem, perfis de motoristas e processamento de pagamentos",
+        "Liderou equipe técnica para lançamento bem-sucedido do BKG Speed no Senegal",
+        "Conduziu testes de estresse e análise de performance para confiabilidade do app"
       ]
     },
-    "clickafrica": {
-      "title": "Desenvolvedor Flutter Líder",
-      "description": "KLIC: Desenvolvimento de aplicação de serviço sob demanda com funcionalidades abrangentes e gerenciamento de equipe.",
+    "aekgroup": {
+      "title": "Engenheiro de Software",
+      "description": "Desenvolvimento do app móvel Pay'ici para gerenciamento de códigos USSD com suporte dual SIM e plugins Flutter personalizados.",
       "tasks": [
-        "Converter designs de alta fidelidade em aplicações Flutter responsivas e aplicar requisitos de UI",
-        "Implementar rastreamento de motorista em tempo real usando Google Maps",
-        "Buscar e gerenciar dados do Firebase Firestore, Realtime Database e APIs personalizadas",
-        "Desenvolver autenticação de usuário, registro e funcionalidades de pagamento",
-        "Permitir aos usuários solicitar corridas, ver detalhes do motorista e gerenciar pagamentos com segurança",
-        "Implementar um sistema de avaliação, revisão e notificações para engajamento do usuário",
-        "Contribuir para construir dashboards para motoristas e administradores para gerenciar dados e análises da aplicação",
-        "Realizar testes, otimizar performance e garantir operação livre de bugs da aplicação",
-        "Configurar pipelines CI/CD para testes automatizados, deployment e melhoria contínua",
-        "Fornecer documentação abrangente para código, arquitetura e medidas de segurança"
+        "Desenvolveu Pay'ici, app multiplataforma para códigos USSD de operadoras móveis togolesas",
+        "Projetou experiência completamente offline com atualizações periódicas do Firebase Firestore",
+        "Desenvolveu suporte dual SIM com plugin Flutter personalizado e código Kotlin nativo",
+        "Consolidou centenas de códigos USSD em interface amigável ao usuário",
+        "Garantiu alta performance e consistência multiplataforma usando Flutter"
       ]
     },
     "leotech": {
       "title": "Desenvolvedor de Software",
-      "description": "Desenvolvimento full-stack e manutenção de aplicações cliente com tecnologias web.",
+      "description": "Manutenção de aplicações cliente e desenvolvimento do website UNIMOON usando ReactJS e TailwindCSS.",
       "tasks": [
-        "Responsável pela manutenção e atualização de aplicações cliente",
-        "Responsável pelo desenvolvimento do site UNIMOON usando ReactJS e TailwindCSS",
-        "Liderar a implementação do software GesPro e treinamento de pessoal",
-        "Responsável pela manutenção e atualização do site SGI-TOGO e aplicação móvel"
+        "Manteve e atualizou várias aplicações cliente para estabilidade e performance",
+        "Desenvolveu website UNIMOON usando ReactJS e TailwindCSS",
+        "Liderou implementação do software de gestão GesPro com treinamento de pessoal",
+        "Gerenciou atualizações e melhorias do website e aplicação móvel SGI-TOGO"
       ]
     },
     "plusservice": {
       "title": "Desenvolvedor de Software",
-      "description": "Desenvolvimento de aplicações desktop e móveis para sistemas de gestão empresarial.",
+      "description": "Construção do app desktop PAVS Account Manager e app Android Catalogue PAVS com sincronização de dados em tempo real.",
       "tasks": [
-        "Construir uma aplicação desktop amigável com Flutter para contador e caixa da empresa",
-        "Permitir ao responsável da empresa criar e gerenciar contas de clientes",
-        "Buscar e gerenciar dados da API rodando em servidores locais",
-        "Desenvolver autenticação de usuário e funcionalidades de reset de senha",
-        "Configurar modo claro e escuro",
-        "Gerenciar sincronização de dados em tempo real entre módulos da aplicação usando Socket.io",
-        "Realizar testes, otimizar performance e garantir operação livre de bugs da aplicação",
-        "Configurar pipelines CI/CD para testes automatizados, deployment e melhoria contínua",
-        "Projetar e construir uma aplicação Android agrupando todos os produtos vendidos pela empresa",
-        "Manter dados sincronizados como preços e disponibilidade entre todos os funcionários da empresa usando Firebase Firestore",
-        "Gerenciar pedidos de produtos",
-        "Implementar autenticação usando Google"
+        "Construiu PAVS Account Manager, app desktop com Flutter e Socket.io",
+        "Desenvolveu autenticação de usuário, reset de senha e temas claro/escuro",
+        "Criou gestão de contas de clientes em tempo real com integração de API local",
+        "Projetou Catalogue PAVS, app Android com integração Firebase Firestore",
+        "Implementou autenticação Google e atualizações de produtos em tempo real"
       ]
     }
   },
   "education": {
     "wes": {
-      "degree": "Equivalência de Diploma por World Education Service"
+      "degree": "Equivalência de Diploma de Bacharel pela World Education Service"
     },
     "aits": {
-      "degree": "Licenciatura em Engenharia de Software"
-    },
-    "software": {
-      "degree": "Licenciatura em Engenharia de Software"
+      "degree": "Diploma de Bacharel em Engenharia de Software"
     },
     "highschool": {
-      "degree": "Diploma de Conclusão do Ensino Médio"
+      "degree": "Diploma de Ensino Médio"
     }
   },
   "projectsData": {
@@ -182,59 +130,28 @@
       }
     },
     "thecyrele": {
-      "description": "Aplicação móvel de transporte construída com Flutter usando Test Driven Development. Inclui rastreamento em tempo real, pagamentos seguros e framework de testes abrangente.",
+      "description": "Aplicação móvel de compartilhamento de viagens construída com Flutter usando Test Driven Development. Recursos incluem rastreamento em tempo real, pagamentos seguros e framework de testes abrangente.",
       "linkTypes": {
-        "app": "Aplicação Móvel"
+        "app": "App Móvel"
       }
     },
     "klic": {
-      "description": "Aplicação de serviço sob demanda similar ao Uber e Uber Eats. Construída com Flutter incluindo rastreamento GPS em tempo real, integração de pagamentos, sistema de avaliação e dashboards administrativos.",
+      "description": "App de serviço sob demanda similar ao Uber e Uber Eats. Construído com Flutter com rastreamento GPS em tempo real, integração de pagamentos, sistema de avaliação e dashboards administrativos.",
       "linkTypes": {
-        "app": "Aplicação Móvel"
+        "app": "App Móvel"
       }
     },
     "pavs": {
-      "description": "Aplicação desktop para gestão de contas construída com Flutter. Inclui autenticação de usuário, sincronização de dados em tempo real com Socket.io e suporte a tema duplo.",
+      "description": "Aplicação desktop para gestão de contas construída com Flutter. Recursos incluem autenticação de usuário, sincronização de dados em tempo real com Socket.io e suporte a temas duplos.",
       "linkTypes": {
-        "app": "Aplicação Desktop"
+        "app": "App Desktop"
       }
     },
     "cataloguePavsApp": {
-      "description": "Aplicação de catálogo de produtos Android com integração Firebase. Gerencia inventário de produtos, preços e pedidos com autenticação Google.",
+      "description": "App de catálogo de produtos Android com integração Firebase. Gerencia inventário de produtos, preços e pedidos com autenticação Google.",
       "linkTypes": {
-        "app": "Aplicação Android"
+        "app": "App Android"
       }
-    }
-  },
-  "hackathonsData": {
-    "hackWestern5": {
-      "description": "Desenvolvimento de um aplicativo mobile que entrega histórias para dormir para crianças usando realidade aumentada."
-    },
-    "hackTheNorth2018": {
-      "description": "Desenvolvimento de um aplicativo mobile que entrega eventos de todo o campus universitário em tempo real para todos os estudantes."
-    },
-    "firstNet": {
-      "description": "Desenvolvimento de um aplicativo mobile que comunica dados médicos de uma vítima de dentro de uma ambulância para médicos no hospital."
-    },
-    "developerWeek": {
-      "description": "Desenvolvimento de uma aplicação web que agrega dados de mídia social sobre criptomoedas e previne preços futuros."
-    },
-    "hackDavis": {
-      "description": "Desenvolvimento de um aplicativo mobile que aloca uma cota diária de emissão de carbono para usuários para avançar em direção a um ambiente sustentável.",
-      "win": "Melhor Hack de Dados"
-    },
-    "ethWaterloo": {
-      "description": "Desenvolvimento de uma aplicação blockchain para médicos e farmacêuticos realizarem transações sem confiança e prevenir overdose em pacientes."
-    },
-    "hackTheNorth2017": {
-      "description": "Desenvolvimento de uma aplicação de realidade virtual permitindo aos usuários se verem em terceira pessoa."
-    },
-    "hackThe6ix": {
-      "description": "Desenvolvimento de uma plataforma aberta para pessoas enviando itens para o mesmo lugar combinarem custos de envio e economizar dinheiro."
-    },
-    "globalAI": {
-      "description": "Desenvolvimento de uma biblioteca Python que pode ser importada para qualquer jogo Python e mudar a dificuldade do jogo baseada na emoção em tempo real do jogador. Usa OpenCV e webcam para reconhecimento facial, e um Modelo de Machine Learning personalizado treinado em um [Dataset de Emoção Kaggle](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/leaderboard) usando [Tensorflow](https://www.tensorflow.org/Tensorflow) e [Keras](https://keras.io/). Este projeto recebeu o prêmio de 1º lugar no Global AI Hackathon - Toronto e também foi convidado para demo no [NextAI Canada](https://www.nextcanada.com/next-ai).",
-      "win": "Vencedor 1º Lugar"
     }
   }
 }

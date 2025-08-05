@@ -4,7 +4,6 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader } from "@/components/ui/card";
 import { WorkExperienceModal } from "@/components/work-experience-modal";
-import { cn } from "@/lib/utils";
 import { ChevronRightIcon } from "lucide-react";
 import React from "react";
 import { createPortal } from "react-dom";
@@ -82,9 +81,9 @@ export const WorkExperienceCard = ({
         onMouseLeave={handleMouseLeave}
         ref={cardRef}
       >
-        <Card className="flex transition-all duration-200 hover:bg-muted/30 hover:px-2 hover:py-1 hover:-mx-2 hover:-my-1">
+        <Card className="flex transition-all duration-200 hover:bg-accent/50 hover:px-2 hover:py-1 hover:-mx-2 hover:-my-1">
           <div className="flex-none">
-            <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
+            <Avatar className="border size-12 m-auto bg-background">
               <AvatarImage
                 src={logoUrl}
                 alt={altText}
@@ -135,6 +134,7 @@ export const WorkExperienceCard = ({
           position={mousePosition}
           company={title}
           companyKey={companyKey}
+          logoUrl={logoUrl}
           onClose={() => setIsModalVisible(false)}
         />,
         document.body

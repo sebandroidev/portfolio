@@ -2,9 +2,13 @@
   "nav": {
     "home": "Start",
     "projects": "Projekte",
+    "resume": "Lebenslauf",
     "blog": "Blog",
     "theme": "Design",
-    "language": "Sprache"
+    "language": "Sprache",
+    "downloadResume": "Lebenslauf herunterladen",
+    "generating": "PDF wird erstellt...",
+    "socialLinks": "Soziale Links"
   },
   "hero": {
     "greeting": "Hallo, ich bin {name} 👋"
@@ -43,127 +47,71 @@
     "sendEmail": "E-Mail senden"
   },
   "companies": {
-    "atomicFinance": {
-      "title": "Bitcoin-Protokoll-Ingenieur",
-      "description": "Implementierung der Bitcoin Discrete Log Contract (DLC) Protokollspezifikationen als Open-Source TypeScript SDK. Dockerisierung aller Microservices und Einrichtung eines Produktions-Kubernetes-Clusters. Architektur eines Data Lakes mit AWS S3 und Athena für historisches Backtesting von Bitcoin-Handelsstrategien. Entwicklung einer mobilen App mit React Native und TypeScript."
-    },
-    "shopify": {
-      "title": "Software-Ingenieur",
-      "description": "Implementierung eines benutzerdefinierten Kubernetes-Controllers in Go zur Automatisierung der Bereitstellung von MySQL- und ProxySQL-benutzerdefinierten Ressourcen, um über 2.000 interne Entwickler zu ermöglichen, ihre App-Datenbanken sofort in die Produktion zu deployen. Schrieb mehrere Skripte in Go zur Automatisierung von MySQL-Datenbank-Failovers unter Beibehaltung der Master-Slave-Replikationstopologien und Konsistenz der Zookeeper-Knoten mit Änderungen."
-    },
-    "nvidia": {
-      "title": "Software-Ingenieur",
-      "description": "Architektur und Programmierung des gesamten MVP des internen Admin- und A/B-Test-Dashboards von GeForce Now Cloud Gaming mit React, Redux, TypeScript und Python."
-    },
-    "splunk": {
-      "title": "Software-Ingenieur",
-      "description": "Mitentwicklung einer Prototyp-iOS-App mit einem anderen Praktikanten in Swift für das neue Splunk Phantom Security Orchestration-Produkt (später öffentlich demonstriert und auf der jährlichen .conf-Konferenz in Las Vegas gestartet). Implementierung eines Echtzeit-Services für die iOS-App in Django (Python) und C++; Serialisierung von Daten mit Protobufs über gRPC übertragen, was zu einer ungefähren 500%igen Steigerung des Datendurchsatzes führte."
-    },
-    "lime": {
-      "title": "Software-Ingenieur",
-      "description": "Vorschlag und Implementierung einer internen Ruby-API zum Senden/Empfangen von Befehlen an Scooter über LTE-Netzwerke. Entwicklung eines vollautomatischen Fahrrad-Firmware-Update-Systems zur Handhabung asynchroner Firmware-Updates von über 100.000+ Scootern weltweit und Bereitstellung von Fortschrittsberichten in Echtzeit mit React, Ruby on Rails, PostgreSQL und AWS EC2, wodurch Hunderte von Entwicklerstunden gespart wurden."
-    },
-    "mitreMedia": {
-      "title": "Software-Ingenieur",
-      "description": "Design und Implementierung eines robusten Passwort-Verschlüsselungs- und Browser-Cookie-Speichersystems in Ruby on Rails. Nutzung der Yahoo Finance API zur Entwicklung des dividend.com Aktien-Screeners"
-    }
-  },
-  "education": {
-    "buildspace": {
-      "degree": "s3, s4, sf1, s5"
-    },
-    "waterloo": {
-      "degree": "Bachelor-Abschluss in Informatik (BCS)"
-    },
-    "laurier": {
-      "degree": "Bachelor-Abschluss in Betriebswirtschaft (BBA)"
-    },
-    "ib": {
-      "degree": "IB-Diplom"
-    }
-  },
-  "companies": {
     "wiicode": {
       "title": "Flutter-Entwickler",
-      "description": "TheCyrele Mobile Application Entwicklung mit sauberer Architektur und TDD-Ansatz.",
+      "description": "Entwicklung der TheCyrcle Autovermietungs-App und Fatou Hausautomations-App mit Flutter und TDD-Ansatz.",
       "tasks": [
-        "Hochpräzise Designs in vollständig responsive Flutter-Apps basierend auf sauberem und flexiblem Dart-Code umwandeln",
-        "Eine solide und saubere Architektur basierend auf Test Driven Development implementieren",
-        "Daten von Firebase Firestore, Realtime Database und benutzerdefinierten APIs abrufen und verwalten",
-        "Benutzern ermöglichen, Fahrten anzufordern, Fahrerdetails zu sehen und Zahlungen sicher zu verwalten",
-        "Das technische Team für den Start von BKG SPEED im Senegal verwalten",
-        "Einige Stresstests schreiben, um die App-Gesundheit und potenzielle Ausfälle zu überprüfen"
+        "TheCyrcle entwickelt, eine plattformübergreifende Autovermietungs-App mit Flutter und TDD",
+        "Hochwertige Figma-Designs in funktionale mobile Anwendungen übersetzt",
+        "Fatou entwickelt, eine komplexe Hausautomations-App mit über 50 Bildschirmen",
+        "Mit Backend-Teams zusammengearbeitet, um mobile Features mit API-Strukturen abzustimmen",
+        "Sauberen, skalierbaren und gut dokumentierten Code für langfristige Wartbarkeit gepflegt"
       ]
     },
     "bkgspeed": {
-      "title": "Lead-Entwickler",
-      "description": "Leitung der Entwicklung stabiler mobiler Anwendungen mit Echtzeitverfolgung und Teammanagement.",
+      "title": "Leitender Software-Ingenieur",
+      "description": "Leitung der mobilen App-Neugestaltung mit Echtzeit-Tracking und Teammanagement für erfolgreichen Launch im Senegal.",
       "tasks": [
-        "Das Design und die Entwicklung einer stabileren Version aller mobilen Anwendungen leiten",
-        "Echtzeitverfolgung von Fahrern mit Google Maps implementieren",
-        "Daten von Firebase Firestore, Realtime Database und benutzerdefinierten APIs abrufen und verwalten",
-        "Benutzern ermöglichen, Fahrten anzufordern, Fahrerdetails zu sehen und Zahlungen sicher zu verwalten",
-        "Das technische Team für den Start von BKG SPEED im Senegal verwalten",
-        "Einige Stresstests schreiben, um die App-Gesundheit und potenzielle Ausfälle zu überprüfen"
+        "Neugestaltung und Entwicklung stabiler und skalierbarer mobiler Anwendungen geleitet",
+        "Echtzeit-Fahrer-Tracking mit Google Maps SDK implementiert",
+        "Datenflüsse von Firebase Firestore, Realtime Database und benutzerdefinierten APIs integriert",
+        "Sichere Features für Fahrtanfragen, Fahrerprofile und Zahlungsabwicklung entwickelt",
+        "Technisches Team für erfolgreichen BKG Speed Launch im Senegal geleitet",
+        "Stresstests und Leistungsanalysen für App-Zuverlässigkeit durchgeführt"
       ]
     },
-    "clickafrica": {
-      "title": "Lead Flutter-Entwickler",
-      "description": "KLIC: On-Demand-Service-App-Entwicklung mit umfassenden Funktionen und Teammanagement.",
+    "aekgroup": {
+      "title": "Software-Ingenieur",
+      "description": "Entwicklung der Pay'ici Mobile App für USSD-Code-Verwaltung mit Dual-SIM-Unterstützung und benutzerdefinierten Flutter-Plugins.",
       "tasks": [
-        "Hochpräzise Designs in responsive Flutter-Apps umwandeln und UI-Anforderungen anwenden",
-        "Echtzeitverfolgung von Fahrern mit Google Maps implementieren",
-        "Daten von Firebase Firestore, Realtime Database und benutzerdefinierten APIs abrufen und verwalten",
-        "Benutzerauthentifizierung, Registrierung und Zahlungsfunktionen entwickeln",
-        "Benutzern ermöglichen, Fahrten anzufordern, Fahrerdetails zu sehen und Zahlungen sicher zu verwalten",
-        "Ein Bewertungs-, Review-System und Benachrichtigungen für Benutzerengagement implementieren",
-        "Zur Erstellung von Dashboards für Fahrer und Administratoren beitragen, um App-Daten und Analysen zu verwalten",
-        "Tests durchführen, Leistung optimieren und fehlerfreien App-Betrieb sicherstellen",
-        "CI/CD-Pipelines für automatisierte Tests, Bereitstellung und kontinuierliche Verbesserung einrichten",
-        "Umfassende Dokumentation für Code, Architektur und Sicherheitsmaßnahmen bereitstellen"
+        "Pay'ici plattformübergreifende App für togolesische Mobilfunkanbieter-USSD-Codes entwickelt",
+        "Vollständige Offline-Erfahrung mit periodischen Updates von Firebase Firestore entworfen",
+        "Dual-SIM-Unterstützung mit benutzerdefiniertem Flutter-Plugin und nativem Kotlin-Code entwickelt",
+        "Hunderte von USSD-Codes in benutzerfreundliche Oberfläche konsolidiert",
+        "Hohe Leistung und plattformübergreifende Konsistenz mit Flutter sichergestellt"
       ]
     },
     "leotech": {
       "title": "Software-Entwickler",
-      "description": "Full-Stack-Entwicklung und Wartung von Client-Anwendungen mit Web-Technologien.",
+      "description": "Wartung von Client-Anwendungen und Entwicklung der UNIMOON-Website mit ReactJS und TailwindCSS.",
       "tasks": [
-        "Verantwortlich für die Wartung und Aktualisierung von Client-Anwendungen",
-        "Verantwortlich für die Entwicklung der UNIMOON-Website mit ReactJS und TailwindCSS",
-        "Die Implementierung der GesPro-Software und Mitarbeiterschulung leiten",
-        "Verantwortlich für die Wartung und Aktualisierung der SGI-TOGO-Website und mobilen Anwendung"
+        "Verschiedene Client-Anwendungen für Stabilität und Leistung gewartet und aktualisiert",
+        "UNIMOON-Website mit ReactJS und TailwindCSS entwickelt",
+        "Implementierung der GesPro-Verwaltungssoftware mit Personalschulung geleitet",
+        "Updates und Verbesserungen für SGI-TOGO Website und mobile Anwendung verwaltet"
       ]
     },
     "plusservice": {
       "title": "Software-Entwickler",
-      "description": "Desktop- und mobile Anwendungsentwicklung für Geschäftsverwaltungssysteme.",
+      "description": "Entwicklung der PAVS Account Manager Desktop-App und Catalogue PAVS Android-App mit Echtzeit-Datensynchronisation.",
       "tasks": [
-        "Eine benutzerfreundliche Desktop-Anwendung mit Flutter für Unternehmensbuchhalter und Kassierer erstellen",
-        "Unternehmensverantwortlichen ermöglichen, Kundenkonten zu erstellen und zu verwalten",
-        "Daten von API abrufen und verwalten, die auf lokalen Servern läuft",
-        "Benutzerauthentifizierung und Passwort-Reset-Funktionen entwickeln",
-        "Hellen und dunklen Modus einrichten",
-        "Echtzeit-Datensynchronisation zwischen Anwendungsmodulen mit Socket.io verwalten",
-        "Tests durchführen, Leistung optimieren und fehlerfreien App-Betrieb sicherstellen",
-        "CI/CD-Pipelines für automatisierte Tests, Bereitstellung und kontinuierliche Verbesserung einrichten",
-        "Eine Android-Anwendung entwerfen und erstellen, die alle vom Unternehmen verkauften Produkte gruppiert",
-        "Synchronisierte Daten wie Preise und Verfügbarkeit über alle Unternehmensmitarbeiter mit Firebase Firestore halten",
-        "Produktbestellungen verwalten",
-        "Authentifizierung mit Google implementieren"
+        "PAVS Account Manager Desktop-App mit Flutter und Socket.io entwickelt",
+        "Benutzerauthentifizierung, Passwort-Reset und Hell-/Dunkel-Modus-Themes entwickelt",
+        "Echtzeit-Kundenkontenverwaltung mit lokaler API-Integration erstellt",
+        "Catalogue PAVS Android-App mit Firebase Firestore-Integration entworfen",
+        "Google-Authentifizierung und Echtzeit-Produktupdates implementiert"
       ]
     }
   },
   "education": {
     "wes": {
-      "degree": "Diplom-Äquivalenz durch World Education Service"
+      "degree": "Bachelor-Abschluss-Äquivalenz durch World Education Service"
     },
     "aits": {
-      "degree": "Bachelor-Abschluss in Software Engineering"
-    },
-    "software": {
-      "degree": "Bachelor-Abschluss in Software Engineering"
+      "degree": "Bachelor-Abschluss in Software-Engineering"
     },
     "highschool": {
-      "degree": "Abitur"
+      "degree": "Abitur-Diplom"
     }
   },
   "projectsData": {

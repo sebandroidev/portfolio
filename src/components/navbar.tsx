@@ -1,25 +1,77 @@
 "use client";
 
+import { Icons } from "@/components/icons";
 import { LanguageToggle } from "@/components/language-toggle";
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { ModeToggle } from "@/components/mode-toggle";
+import { NavbarTooltip } from "@/components/navbar-tooltip";
+import { SocialLinksDropdown } from "@/components/social-links-dropdown";
 import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import {
-    Tooltip,
-    TooltipContent,
-    TooltipTrigger,
-} from "@/components/ui/tooltip";
 import { STATIC_DATA } from "@/data/resume-i18n";
 import { Link as I18nLink } from '@/i18n/routing';
 import { cn } from "@/lib/utils";
 import { useTranslations } from 'next-intl';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import React from "react";
+import { createPortal } from "react-dom";
 
 export default function Navbar() {
   const t = useTranslations();
   const pathname = usePathname();
+  
+  // Tooltip state management
+  const [tooltipState, setTooltipState] = React.useState({
+    isVisible: false,
+    position: { x: 0, y: 0 },
+    content: ''
+  });
+  const timeoutRef = React.useRef<NodeJS.Timeout | null>(null);
+
+  // Tooltip handlers
+  const handleTooltipMouseEnter = (e: React.MouseEvent, content: string) => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    
+    const rect = e.currentTarget.getBoundingClientRect();
+    const position = {
+      x: rect.left + rect.width / 2, // Center horizontally
+      y: rect.top // Top of the button
+    };
+    
+    setTooltipState({
+      isVisible: true,
+      position,
+      content
+    });
+  };
+
+  const handleTooltipMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setTooltipState(prev => ({ ...prev, isVisible: false }));
+    }, 100);
+  };
+
+  // Cleanup timeout on unmount
+  React.useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
+  
+  // Download resume function for navbar button
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/NOGBEDJI SEBASTIEN - Resume.pdf';
+    link.download = 'NOGBEDJI SEBASTIEN - Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   
   return (
     <>
@@ -37,74 +89,102 @@ export default function Navbar() {
           
           return (
             <DockIcon key={item.href}>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <I18nLink
-                    href={item.href as any}
-                    className={cn(
-                      buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 cursor-pointer",
-                      isActive && "bg-accent text-accent-foreground"
-                    )}
-                  >
-                    <item.icon className="size-4" />
-                  </I18nLink>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>{t(`nav.${item.label.toLowerCase()}`)}</p>
-                </TooltipContent>
-              </Tooltip>
+              <I18nLink
+                href={item.href as any}
+                className={cn(
+                  buttonVariants({ variant: "ghost", size: "icon" }),
+                  "size-12 cursor-pointer",
+                  isActive && "bg-accent text-accent-foreground"
+                )}
+                onMouseEnter={(e) => handleTooltipMouseEnter(e, t(`nav.${item.label.toLowerCase()}`))}
+                onMouseLeave={handleTooltipMouseLeave}
+              >
+                <item.icon className="size-4" />
+              </I18nLink>
             </DockIcon>
           );
         })}
+        
+        {/* Download Resume Button */}
+        <DockIcon>
+          <button
+            onClick={downloadResume}
+            className={cn(
+              buttonVariants({ variant: "ghost", size: "icon" }),
+              "size-12 cursor-pointer"
+            )}
+            onMouseEnter={(e) => handleTooltipMouseEnter(e, t('nav.downloadResume'))}
+            onMouseLeave={handleTooltipMouseLeave}
+          >
+            <Icons.download className="size-4" />
+          </button>
+        </DockIcon>
         <Separator orientation="vertical" className="h-full" />
-        {Object.entries(STATIC_DATA.contact.social)
-          .filter(([_, social]) => social.navbar)
-          .map(([name, social]) => (
-            <DockIcon key={name}>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Link
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={cn(
-                      buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 cursor-pointer"
-                    )}
-                  >
-                    <social.icon className="size-4" />
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>{name === 'email' ? t('social.sendEmail') : name}</p>
-                </TooltipContent>
-              </Tooltip>
-            </DockIcon>
-          ))}
+        
+        {/* Desktop: Individual social icons */}
+        <div className="hidden sm:contents">
+          {Object.entries(STATIC_DATA.contact.social)
+            .filter(([_, social]) => social.navbar)
+            .map(([name, social]) => (
+              <DockIcon key={name}>
+                <Link
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn(
+                    buttonVariants({ variant: "ghost", size: "icon" }),
+                    "size-12 cursor-pointer"
+                  )}
+                  onMouseEnter={(e) => handleTooltipMouseEnter(e, name === 'email' ? t('social.sendEmail') : name)}
+                  onMouseLeave={handleTooltipMouseLeave}
+                >
+                  <social.icon className="size-4" />
+                </Link>
+              </DockIcon>
+            ))}
+        </div>
+        
+        {/* Mobile: Social links dropdown */}
+        <div className="sm:hidden">
+          <DockIcon>
+            <div
+              onMouseEnter={(e) => handleTooltipMouseEnter(e, t('nav.socialLinks'))}
+              onMouseLeave={handleTooltipMouseLeave}
+            >
+              <SocialLinksDropdown />
+            </div>
+          </DockIcon>
+        </div>
+        
         <Separator orientation="vertical" className="h-full py-2" />
         <DockIcon>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <ModeToggle />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>{t('nav.theme')}</p>
-            </TooltipContent>
-          </Tooltip>
+          <div
+            onMouseEnter={(e) => handleTooltipMouseEnter(e, t('nav.theme'))}
+            onMouseLeave={handleTooltipMouseLeave}
+          >
+            <ModeToggle />
+          </div>
         </DockIcon>
         <DockIcon>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <LanguageToggle />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>{t('nav.language')}</p>
-            </TooltipContent>
-          </Tooltip>
+          <div
+            onMouseEnter={(e) => handleTooltipMouseEnter(e, t('nav.language'))}
+            onMouseLeave={handleTooltipMouseLeave}
+          >
+            <LanguageToggle />
+          </div>
         </DockIcon>
         </Dock>
       </div>
+      
+      {/* Custom tooltip portal */}
+      {tooltipState.isVisible && typeof window !== 'undefined' && createPortal(
+        <NavbarTooltip
+          isVisible={tooltipState.isVisible}
+          position={tooltipState.position}
+          content={tooltipState.content}
+        />,
+        document.body
+      )}
     </>
   );
 }
