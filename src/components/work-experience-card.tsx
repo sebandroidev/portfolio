@@ -35,7 +35,7 @@ export const WorkExperienceCard = ({
   const [isModalVisible, setIsModalVisible] = React.useState(false);
   const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
   const cardRef = React.useRef<HTMLDivElement>(null);
-  const timeoutRef = React.useRef<NodeJS.Timeout>();
+  const timeoutRef = React.useRef<NodeJS.Timeout | null>(null);
 
   const handleMouseEnter = (e: React.MouseEvent) => {
     // Clear any existing timeout

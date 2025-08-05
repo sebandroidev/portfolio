@@ -19,25 +19,43 @@ export function GitHubHighlights() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fetch GitHub stats
-    fetch('https://api.github.com/users/sebandroidev')
-      .then(response => response.json())
-      .then(data => {
-        setStats({
-          followers: data.followers,
-          following: data.following
+    // Fetch GitHub stats with better error handling and timeout
+    const fetchGitHubStats = async () => {
+      try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
+        
+        const response = await fetch('https://api.github.com/users/sebandroidev', {
+          headers: {
+            'Accept': 'application/vnd.github.v3+json',
+          },
+          signal: controller.signal,
         });
-        setLoading(false);
-      })
-      .catch(error => {
-        console.error('Error fetching GitHub stats:', error);
-        // Fallback to static data
+        
+        clearTimeout(timeoutId);
+        
+        if (!response.ok) {
+          throw new Error(`GitHub API responded with status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        setStats({
+          followers: data.followers || 19,
+          following: data.following || 12
+        });
+      } catch (error) {
+        console.warn('GitHub API unavailable, using fallback data:', error);
+        // Fallback to static data when API fails
         setStats({
           followers: 19,
           following: 12
         });
+      } finally {
         setLoading(false);
-      });
+      }
+    };
+
+    fetchGitHubStats();
   }, []);
 
   const achievements = [
