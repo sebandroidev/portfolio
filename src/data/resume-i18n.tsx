@@ -182,6 +182,34 @@ export function useResumeData() {
     ],
     projects: [
       {
+        title: "Mellow - Swagger but just better",
+        href: "#",
+        dates: "2025 - Present",
+        active: true,
+        status: "Live",
+        description: t('projectsData.mellow.description'),
+        technologies: [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "JSON",
+          "API Documentation",
+          "Swagger",
+          "Vercel",
+        ],
+        links: [
+          {
+            type: "Try now",
+            href: "https://mellow-rosy.vercel.app/",
+            icon: getProjectLinkIcon("Try now"),
+          },
+        ],
+        image: "", // You can add a poster image later
+        video: "/videos/mellow.mp4", // Local video file
+        videoType: "direct" as const,
+        poster: "", // Optional poster image
+      },
+      {
         title: "Trendz: Events & Fun",
         href: "#",
         dates: "December 2023 - Present",
@@ -211,7 +239,9 @@ export function useResumeData() {
           },
         ],
         image: "/trendz-app.png",
-        video: "",
+        video: "https://youtu.be/your-video-id", // Example YouTube video
+        videoType: "youtube" as const,
+        poster: "/trendz-app.png", // Fallback poster
       },
       {
         title: "Molory",
@@ -290,7 +320,9 @@ export function useResumeData() {
           },
         ],
         image: "/klic-app.png",
-        video: "",
+        video: "/videos/klic.mp4",
+        videoType: "direct" as const,
+        poster: "/klic-app.png",
       },
       {
         title: "PAVS Account Manager",

@@ -1,14 +1,19 @@
+"use client";
+
+import { ProjectDialog } from "@/components/project-dialog";
+import { ProjectVideo } from "@/components/project-video";
 import { Badge } from "@/components/ui/badge";
 import {
-    Card,
-    CardContent,
-    CardFooter,
-    CardHeader,
-    CardTitle,
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import Markdown from "react-markdown";
 
 interface Props {
@@ -20,12 +25,16 @@ interface Props {
   link?: string;
   image?: string;
   video?: string;
+  videoType?: 'youtube' | 'vimeo' | 'loom' | 'direct';
+  poster?: string;
   links?: readonly {
     icon: React.ReactNode;
     type: string;
     href: string;
   }[];
   className?: string;
+  active?: boolean;
+  status?: string;
 }
 
 export function ProjectCard({
@@ -37,30 +46,62 @@ export function ProjectCard({
   link,
   image,
   video,
+  videoType = 'direct',
+  poster,
   links,
   className,
+  active = false,
+  status,
 }: Props) {
+  const [dialogOpen, setDialogOpen] = useState(false);
+
+  const handleCardClick = (e: React.MouseEvent) => {
+    // Prevent opening dialog if clicking on a link
+    if ((e.target as HTMLElement).closest('a')) {
+      return;
+    }
+    setDialogOpen(true);
+  };
+
+  const projectData = {
+    title,
+    description,
+    dates,
+    active,
+    status,
+    technologies: tags as string[],
+    links: links as Array<{
+      type: string;
+      href: string;
+      icon: React.ReactNode;
+    }> || [],
+    image,
+    video,
+    videoType,
+    poster,
+    href,
+  };
   return (
-    <Card
-      className={
-        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
-      }
-    >
-      <Link
-        href={href || "#"}
-        className={cn("block cursor-pointer", className)}
+    <>
+      <Card
+        className={cn(
+          "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full cursor-pointer",
+          className
+        )}
+        onClick={handleCardClick}
       >
+        <div className="block"
+        >
         {video && (
-          <video
+          <ProjectVideo
             src={video}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
+            title={title}
+            type={videoType}
+            poster={poster}
+            className="h-45"
           />
         )}
-        {image && (
+        {!video && image && (
           <Image
             src={image}
             alt={title}
@@ -69,7 +110,7 @@ export function ProjectCard({
             className="h-40 w-full overflow-hidden object-cover object-top"
           />
         )}
-      </Link>
+        </div>
       <CardHeader className="px-2">
         <div className="space-y-1">
           <CardTitle className="mt-1 text-base">{title}</CardTitle>
@@ -112,5 +153,12 @@ export function ProjectCard({
         )}
       </CardFooter>
     </Card>
+    
+    <ProjectDialog
+      open={dialogOpen}
+      onOpenChange={setDialogOpen}
+      project={projectData}
+    />
+    </>
   );
 }

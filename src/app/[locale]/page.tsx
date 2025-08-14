@@ -10,7 +10,6 @@ import { WorkExperienceCard } from "@/components/work-experience-card";
 import { useResumeData } from "@/data/resume-i18n";
 import { Link as I18nLink } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
-import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -155,17 +154,21 @@ export default function Page() {
                 key={project.title}
                 delay={BLUR_FADE_DELAY * 11 + id * 0.05}
               >
-                <ProjectCard
-                  href={project.href}
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  dates={project.dates}
-                  tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
-                />
+                                    <ProjectCard
+                      href={project.href}
+                      key={project.title}
+                      title={project.title}
+                      description={project.description}
+                      dates={project.dates}
+                      tags={project.technologies}
+                      image={project.image}
+                      video={project.video}
+                      videoType={project.videoType}
+                      poster={project.poster}
+                      links={project.links}
+                      active={project.active}
+                      status={project.status}
+                    />
               </BlurFade>
             ))}
           </div>

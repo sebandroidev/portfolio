@@ -152,6 +152,12 @@
       "linkTypes": {
         "app": "Android App"
       }
+    },
+    "mellow": {
+      "description": "Verwandelt Swagger/OpenAPI JSON in schöne, moderne API-Dokumentation mit globaler Suche, integrierten Tests und nativem Dark Mode. Lokale Verarbeitung für Sicherheit.",
+      "linkTypes": {
+        "demo": "Demo"
+      }
     }
   },
   "hackathonsData": {
